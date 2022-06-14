@@ -1,0 +1,2882 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;535;545;600;700;800&family=Nunito:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;535;545;600;700;800&family=Nunito:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;535;545;600;700;800&family=Nunito:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;535;545;600;700;800&family=Nunito:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,200;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color: #333;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+*::selection {
+    background: rgb(153, 144, 144);
+}
+
+body {
+    background: #4d4c4c;
+    width: 100vw;
+    height: 100%;
+    appearance: none;
+    outline: none;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: manrope, sans-serif; 
+    line-height: 1.1;
+}
+
+img {
+    max-width: 100%;
+}
+nav, section, footer {
+    width: 95%;
+    margin: 0 auto;
+}
+nav {
+    height: 55px;
+    margin-top: 25px;
+    background: #f8f8f8; 
+}
+.container {
+    padding: 0 120px 0 110px;
+}
+
+nav .container {
+    padding-top: 10px;
+    display: flex;
+     justify-content: space-between;
+     font-size: 15px;
+   
+}
+nav .logo {
+    font-family: manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo span:first-child {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #e7332b;
+    display: inline-block;
+    margin-top: 6px;
+    margin-inline: 1.5px;
+}
+nav .link {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: auto;
+}
+nav .link ul {
+    display: flex;
+    gap: 3rem;
+    font-family: nunito, sans-serif;
+    margin-left: 55px;
+    font-size: 16.5px;
+}
+nav ul li a.active {
+    color: #333;
+    font-family: nunito, sans-serif;
+    font-weight: 550;
+    position: relative;
+}
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+nav ul li a.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 60px;
+    background: #e7332b;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(1);
+    transition: transform 0.8s ease-out;
+    transform-origin: bottom left;
+}
+
+nav ul li a.active:hover::after {
+    transform: scaleX(0);
+}
+
+
+nav ul li a:not(.active) {
+    color: #4d4c4c;
+    display: inline-block;
+    height: 100%;
+}
+.link .special {
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 30px;
+}
+
+.link .special a {
+    font-family: quicksand, sans-serif;
+    font-size: 14.5px;
+    color: #fff;
+}
+.link .special a:hover {
+    color: #e7332b;
+}
+section.upper {
+    background: #fff;
+    border: 0.1px solid #e1e1e1;
+}
+
+section.upper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.upper .container .left {
+    height: 320px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+section.upper .left h1 {
+    font-size: 2.35em;
+    color: #4d4c4c;
+    width: 350px;
+}
+
+section.upper .left > span {
+    margin-top: 10px;
+    width: 400px;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #4d4c4c;
+    letter-spacing: 0.2px;
+}
+
+section.upper .left .menu {
+    display: flex;
+    margin-top: 1rem;
+    width: 300px;
+    height: 40px;
+    gap: 0.2rem;
+}
+section.upper .left .menu .btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: manrope, sans-serif;
+    border-radius: 25px;
+    width: 105px;
+    height: 32px;
+    background: #e7332b;
+    color: #fff;
+    box-shadow: 5px 6px 10px #4d4c4c;
+}
+section.upper .left .menu .btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4d4c4c;
+    font-family: manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 105px;
+    height: 32px;
+}
+section.upper .left img {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    top: 180px;
+}
+
+section.upper .right {
+    height: 400px;
+    position: relative;
+}
+section.upper .right img {
+    max-height: 100%;
+}
+section.upper .right img:last-child {
+    width: 0.8rem;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 120px;
+}
+i.fas {
+    margin: 4px 2px 2px 1px;
+}
+section.middle span {
+    font-family: manrope, sans-serif;
+    font-size: 10px;
+}
+section.middle {
+    background: #f8f8f8;
+     height: 80vh; 
+    position: relative;
+}
+section.middle .container {
+    display: flex;
+     gap: 4.5rem; 
+     align-items: center;
+     padding-top: 40px;
+}
+section.middle .left {
+    width: 85vw;
+}
+
+section.middle .left .logo h4 {
+    font-size: 12px;
+    font-family: manrope, sans-serif
+}
+section.middle .left .logo img {
+    width: 125px;
+    margin-top: 10px;
+}
+
+section.middle .left .info {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+section.middle .left .info .card {
+    height: 170px;
+    border-radius: 10px;
+    padding: 1rem 1rem 0.3rem 1rem;
+    box-shadow: 5px 5px 12px #b0b0b0;
+}
+section.middle .left .info .card:hover {
+    border: 1px solid #c83eff;
+}
+section.middle .left .info .card h4 {
+    font-size: 13px;
+    font-family: nunito, sans-serif;
+    color: #333;
+    margin-top: 15px;
+}
+section.middle .left .info .card span {
+    color: #4d4c4c;
+    margin-top: 23px;
+    font-family: nunito, sans-serif;
+    display: inline-block;
+    height: 60px;
+    width: 120px;
+    line-height: 1.4;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+section.middle .left .info .mini {
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+section.middle .left .info .mini.box1 {
+    background: #f0dcf8;
+}
+section.middle .left .info .mini.box2 {
+    background: #fceceb;
+}
+section.middle .left .info .mini.box3 {
+    background: #effff4;
+}
+section.middle .left .info .mini.box4 {
+    background: #eff1ff;
+}
+section.middle .right {
+    height: 280px;
+    padding-left: 30px;
+}
+section.middle .right h2 {
+    width: 75%;
+    font-size: 24px;
+    font-family: manrope, sans-serif;
+    color: #4d4c4c;
+    line-height: 1.2;
+} section.middle .right span {
+    font-size: 12.2px;
+    margin-top: 9px;
+    line-height: 1.3;
+    color: #4d4c4c;
+    width: 230px;
+    display: inline-block;
+    font-family: nunito, sans-serif;
+}
+
+section.middle .right .menu {
+    margin-top: 1rem;
+    font-size: 11px;
+    font-family: quicksand, sans-serif;
+    background: #000;
+    border-radius: 18px;
+    width: 96px;
+    height: 30px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section.middle .right .menu a {
+    color: #fff;
+}
+section.middle .right .menu a:hover {
+    color: #e7332b;
+}
+section.middle .cube1 {
+    width: 25px;
+    position: absolute;
+    top: 115px;
+    left: 480px;
+}
+section.middle .cube2 {
+    width: 10px;
+    position: absolute;
+    top: 55px;
+    left: 720px;
+}
+section.middle .cube3 {
+    width: 10px;
+    position: absolute;
+    top: 135px;
+    left: 400px;
+    z-index: 0;
+}
+section.middle .dot {
+    position: absolute;
+    top: 48px;
+    left: 540px;
+    width: 2.2rem;
+    height: auto;
+}
+section.lower {
+    background: #fff;
+     height: 82vh;
+    position: relative;
+    z-index: 3;
+    border-bottom: 1px solid #e1e1e1;
+}
+section.lower::before {
+   content: "";
+   position: absolute;
+   top: -3px;
+   left: 0;
+   width: 100%;
+   height: 60px;
+   background: #fff;
+   transform: skewy(-3.5deg);
+   z-index: -1; 
+}
+section.lower .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 3;
+    padding-top: 54px;
+}
+
+section.lower span {
+    font-family: manrope, sans-serif;
+    font-size: 10px;
+}
+section.lower .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+section.lower .left h2 {
+    width: 280px;
+    height: 70px;
+    font-size: 24px;
+    font-family: manrope, sans-serif;
+    color: #4d4c4c;
+    line-height: 1.2;
+}
+section.lower .left span {
+    font-size: 12.2px;
+    line-height: 1.3;
+    color: #4d4c4c;
+    width: 230px;
+    display: inline-block;
+    font-family: nunito, sans-serif;
+}
+section.lower .left .link {
+    margin-top: 1.4rem;
+    font-size: 12px;
+    font-family: manrope, sans-serif;
+    background: #e7332b;
+    border-radius: 18px;
+    width: 109px;
+    height: 30px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section.lower .left .link a {
+    color: #fff;
+}
+section.lower .left .link a:hover {
+    color: #7cd5ff;
+}
+section.lower .right {
+    width: 450px;
+    margin-right: 95px; 
+}
+section.lower .right .linkbox {
+    display: grid;
+    grid-template: repeat(2, 150px) / repeat(2, 1fr);
+    column-gap: 0.2rem;
+    row-gap: 0.8rem;
+    height: 342px;
+}
+section.lower .linkbox .card:first-child{
+    margin-top: 15px;
+    background: #f9f3fb;
+}
+section.lower .linkbox .card:hover {
+    background: #f9f3fb;
+    box-shadow: 4px 4px 8px #fff;
+}
+section.lower .linkbox .card:nth-child(3){
+    margin-top: 15px;
+}
+section.lower .linkbox .card h4 {
+    font-size: 13px;
+    font-family: nunito, sans-serif;
+    color: #333;
+    margin-top: 8px;
+}
+section.lower .right .linkbox .card {
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+    padding: 1rem 1.6rem 2.5rem 1rem;
+    box-shadow: 5px 5px 12px #b0b0b0;
+}
+section.lower .right .linkbox .card span {
+    display: inline-block;
+    font-size: 10.2px;
+    line-height: 1.42;
+    margin-top: 9px;
+    font-family: nunito, sans-serif;
+}
+section.lower .extra img.one {
+    position: absolute;
+    right: -1px;
+    top: 325px;
+    width: 23px;
+    height: 43px;
+}
+section.lower .extra img.two {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    top: 350px;
+    right: 0;
+}
+section.lower .extra img.three {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: -1.5px;
+    top: 339px;
+}
+section.lower .extra .dot1 {
+    position: absolute;
+    top: 350px;
+    left: 119px;
+    width: 50px;
+    height: 60px;
+}
+section.lower .extra .dot2 {
+    position: absolute;
+    top: 350px;
+    left: 170px;
+    width: 50px;
+    height: 60px;
+}
+section.lower .extra .deep {
+    position: absolute;
+    top: 260px;
+    left: 490px;
+    width: 26px;
+    height: 26px;
+}
+section.lowest {
+   height: 95vh; 
+   background: #f8f8f8; 
+    position: relative;
+}
+section.lowest::after {
+    content: "";
+    width: 100%;
+    height: 310px;
+    position: absolute;
+    z-index: 0;
+    transform: skewY(-6deg);
+    bottom: -85px;
+    left: 0;
+    background: #fff;
+}
+
+section.lowest .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.5rem;
+    padding-top: 90px;
+    padding-left: 170px;
+    position: relative;
+    z-index: 1;
+    width: 100%; 
+}
+section.lowest .left {
+    width: 50%;
+    height: 430px;
+    position: relative;
+    border: 1.5px solid #cac8c8;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+    padding-top: 1rem;
+    background: #fff;
+    outline: none;
+    border-radius: 10px;
+}
+.data1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7rem;
+    margin-top: 15px;
+}
+label {
+    font-family: manrope, sans-serif;
+    font-size: 15px;
+    color: #4d4c4c;
+}
+.info1 {
+    padding-left: 8px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0.5rem;
+}
+.info6 input.phone {
+    margin-top: -5px;
+}
+ .info3{
+    display: flex;
+    flex-direction: row;
+    margin-top: -1px;
+    margin-left: -2px;
+}
+.data2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+input {
+    width: 220px;
+    height: 32px;
+    border-radius: 5px;
+}
+.info1 input {
+     margin-top: 8px;
+}
+select {
+    width: 220px;
+    height: 32px;
+    border-radius: 5px; 
+}
+.data2 select:last-child {
+    margin-top: 1rem;
+}
+.data1 .info-a {
+    width: 80px;
+}
+.data1 select.age {
+    width: 100%;
+}
+.data1 .info-g {
+    width: 80px;
+}
+.data1 select.gender {
+    width: 100%;
+}
+.data2 select.count {
+    margin-top: -5px;
+}
+.data2 .info8 {
+   margin-top: 11px;
+}
+button {
+    height: 30px;
+    width: 125px;
+    position: absolute;
+    bottom: 3rem;
+    right: 2.1rem;
+    border-radius: 16px;
+    background: #000;
+    color: #fff;
+    font-family: nunito, sans-serif;
+    font-size: 14px;
+}
+button:hover {
+    color: #e7332b;
+}
+section.lowest aside {
+    width: 400px;
+    height: 380px;
+}
+section.lowest aside h3 {
+     width: 220px; 
+    height: 45px;
+    font-size: x-large;
+     font-family: manrope, sans-serif; 
+    color: #4d4c4c;
+    line-height: 1;
+}
+section.lowest aside span {
+    font-size: 12.5px;
+    margin-top: 6px;
+    line-height: 1.4;
+    color: #4d4c4c;
+    width: 230px;
+    display: inline-block;
+    font-family: nunito, sans-serif;
+    letter-spacing: 0.2px;
+}
+.items img.one{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 160px;
+    left: 720px;
+}
+.items img.two {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.items img.three {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
+.items img.four {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 230px;
+}
+.items img.five {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 230px;
+}
+.items img.six {
+    width: 41px;
+    height: 65px;
+    position: absolute;
+    top: 160px;
+    left: 130px;
+    z-index: 0;
+}
+footer {
+    background: #fff;
+    height: 45vh;
+    position: relative;
+    z-index: 1;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1.5px solid #cac8c8;
+}
+footer .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+footer img {
+    width: 135px;
+    margin-bottom: 2px;
+}
+footer .logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+footer .logo span:first-child {
+    color: #e7332b;
+    background: #ffedec;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+     border: 1px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .logo span:first-child:hover {
+    background: #000;
+}
+
+footer .logo span:last-child {
+    font-size: 13px;
+    font-family: manrope, sans-serif;
+}
+footer .right {
+    display: flex;
+    width: 600px;
+    height: 180px;
+    margin-top: 50px;
+}
+
+footer .right .box {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+footer .right .box h3 {
+    font-size: 16px;
+    margin: 4px 4px 4px 5px;
+}
+footer .right .box span {
+    font-size: 13px;
+    display: inline-block;
+    margin: 4px 30px 4px 5px;
+
+}
+/* END OF STYLE */
+
+@media screen and (max-width: 1343px) {
+        section.lowest .left {
+            position: relative;
+            left:-20px
+        }
+        input {
+            width: 200px;
+        }
+        select {
+            width: 200px; 
+        }
+        .items img.six {
+            left: 110px;
+        }
+        section.lower::before {
+            content: "";
+            top: -42px;
+            height: 90px;
+            transform: skewy(-3deg);
+         }
+        section.lowest::after {
+            content: "";
+            height: 230px;
+            transform: skewY(-6deg);
+            bottom: -50px;
+        }
+        .items img.one{
+            left: 680px;
+        }
+    }
+    @media screen and (max-width: 1257px) {
+        section.lower::before {
+            content: "";
+            top: -40px;
+            height: 90px;
+            transform: skewy(-2deg);
+         }
+         section.lowest .left {
+             width: 60%;
+         }
+         form {
+            gap: 0.5rem;
+         }
+         section.lowest .container {
+            gap: 3.5rem;
+        }
+        .items img.one{
+            left: 670px;
+        }
+        section.lower .right .linkbox .card span {
+            font-size: 11px;
+            line-height: 1.39;
+            margin-top: 4px;
+        }
+        section.lower .left span {
+            font-size: 13px;
+            line-height: 1.34;
+        }
+        section.lowest aside span {
+        font-size: 13.6px;
+        line-height: 1.4;
+        letter-spacing: 0;
+    }
+
+    }
+    @media screen and (max-width: 1200px) {
+        section.upper .container {
+            gap: 3.5rem;
+        }
+        section.upper .container .left {
+            height: 320px;
+            width: 390px;
+        }
+        section.upper .left h1 {
+            font-size: 2.1em;
+            width: 300px;
+        }
+        
+        section.upper .left > span {
+            margin-top: 7px;
+            width: 360px;
+            font-size: 16px;
+        }
+        
+        section.upper .left .menu {
+            margin-top: 0.8rem;
+            gap: 0.2rem;
+        }
+        section.middle .container {
+             gap: 2rem; 
+        }
+        section.middle .left {
+            width: 75vw;
+        }
+        section.middle .right {
+            height: 280px;
+            padding-left: 0;
+        }
+        section.middle .right h2 {
+            width: 90%;
+            font-size: 23px;
+            }
+        section.middle .right span {
+            font-size: 14px;
+            margin-top: 7px;
+            width: 220px;
+        }
+        section.lower .extra .deep {
+            top: 260px;
+            left: 410px;
+        }
+        section.lowest .container {
+            gap: 5.8rem;
+        }
+        footer {
+             height: 50vh; 
+        }
+    }
+    @media screen and (max-width: 1128px) {
+        nav .container {
+            padding-right: 65px;
+        }
+        nav .link ul {
+            display: flex;
+            gap: 1.9rem;
+            margin-left: 105px;
+            font-size: 16.3px;
+        }
+        .link .special {
+            width: 110px;
+            height: 33px;
+        }
+        .link .special a {
+            font-size: 14.2px;
+        } 
+        section.middle .right span {
+            font-size: 13.2px;
+            margin-top: 7px;
+            width: 220px;
+        } 
+        section.lower .extra .deep {
+            top: 300px;
+            left: 310px;
+        }
+        section.lowest .left {
+            width: 83%;
+        }
+        section.lowest .left {
+            position: relative;
+            left:-40px
+        }
+        section.lowest .container {
+            gap: 5rem;
+        }
+    }
+    @media screen and (max-width: 1089px) {
+        section.middle .container {
+            gap: 1.2rem; 
+       }
+        section.middle .left {
+            width: 65vw;
+        }
+        section.middle .right {
+            height: 300px;
+            width: 220px;
+        }
+        section.middle .right h2 {
+            width: 100%;
+            font-size: 22px;
+            }
+        section.middle .right span {
+            font-size: 14px;
+            margin-top: 7px;
+            width: 190px;
+        }
+        section.middle .right .menu a {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 1038px) {
+        section.middle .container {
+            padding-left: 30px;
+        }
+
+        section.upper .container {
+            padding-left: 30px;
+        }
+        section.lower .container {
+            padding-left: 30px;
+        }
+       section.lowest .left {
+           margin-left: -50px;
+       }
+       section.middle .cube1 {
+        top: 120px;
+        left: 400px;
+    }
+    section.middle .cube2 {
+        top: 80px;
+        left: 660px;
+    }
+    section.middle .cube3 {
+        top: 136px;
+        left: 330px;
+    }
+    section.middle .dot {
+        top: 80px;
+        left: 445px;
+        width: 2.2rem;
+    }
+    section.lower .container {
+        padding-top: 30px;
+    }
+    section.lower {
+        height: 78vh; 
+    }
+    section.lower .extra .deep {
+        top: 280px;
+        left: 210px;
+    }
+    
+    section.lower .extra .dot1 {
+        top: 340px;
+        left: 34px;
+    }
+    section.lower .extra .dot2 {
+        top: 340px;
+        left: 85px;
+    }
+    .items img.one{
+        left: 590px;
+    } 
+    
+    .items img.four {
+    top: 290px;
+    }
+    .items img.five {
+    top: 290px;
+   }
+  .items img.six {
+    left: 40px;
+  } 
+   .items img.two {
+    top: 50px;
+    left: 200px;
+   }
+   .items img.three {
+    top: 95px;
+    left: 30px;
+}
+    footer .right {
+    width: 500px;
+    height: 160px;
+    margin-top: 60px;
+}
+   footer .right .box {
+    width: 135px;
+}
+section.lowest {
+    height: 98vh;
+}
+  }
+
+    @media screen and (max-width: 1006px) {
+        section.upper .container {
+             gap:1rem; 
+            padding-right: 30px;
+        }
+        section.upper .right {
+            height: 400px;
+            width: 650px;
+        }
+        section.upper .right img {
+            max-height: 100%;
+        }
+        section.upper .right img:last-child {
+            top: 18px;
+        }
+        section.middle .container {
+            gap: 2.3rem; 
+       }
+        section.middle .left {
+            width: 65vw;
+        }
+    }
+    @media screen and (max-width: 984px) {
+        section.lowest::after {
+            content: "";
+            height: 290px;
+            transform: skewY(-6deg);
+            bottom: -70px;
+        }
+            section.middle .container {
+                gap: 3rem; 
+           }
+           footer .container {
+            margin-top: -70px;
+            padding-top: 10px;
+        }
+        footer {
+            height: 48vh;
+        }
+        section.middle .right h2 {
+            width: 100%;
+            font-size: 21px;
+            }
+        section.middle .right span {
+            font-size: 12.5px;
+            width: 170px;
+        }
+        section.middle .left {
+            width: 68vw;
+           }
+           section.lowest {
+               height: 110vh;
+           }
+        }
+        @media screen and (max-width: 960px) {
+            section.lower::before {
+                content: "";
+                top: -20px;
+                height: 100px;
+                transform: skewy(-1.4deg);
+                z-index: -1;
+             } 
+             section.lower .left h2 {
+                width: 250px;
+                height: 55px;
+                font-size: 21px;
+            } 
+            section.lower .left span {
+                font-size: 12.5px;
+                line-height: 1.3;
+            }
+            .items img.one{
+                left: 560px;
+            } 
+            section.lowest .container {
+                gap: 3rem;
+            }
+            section.lowest aside h3 {
+               font-size: 21px; 
+           }
+           section.lowest aside span {
+               font-size: 12.4px;
+               margin-top: -6px;
+               line-height: 1.3;
+           }
+
+           footer .container {
+               gap: 7rem;
+           }
+           footer .right {
+            width: 500px;
+            height: 180px;
+        }
+           footer .right .box {
+            width: 135px;
+        }
+        footer .right .box h3 {
+            font-size: 15px;
+        }
+        footer .right .box span {
+            font-size: 12.5px;
+        }
+        }
+
+    @media screen and (max-width: 922px) {
+        nav .container {
+            padding-right: 35px;
+        }
+        section.middle {
+            max-height: 480px;
+        }
+          section.lower {
+            max-height: 480px;   
+          }
+          section.lowest {
+              max-height: 650px;
+          }
+          footer {
+              max-height: 300px;
+          }
+        nav .link ul {
+            gap: 1.2rem;
+            margin-left: 158px;
+            font-size: 16px;
+        }
+        .link .special {
+            width: 110px;
+            height: 33px;
+        }
+        .link .special a {
+            font-size: 14px;
+        }
+        section.upper .container {
+            gap: 3.5rem;
+        }
+        section.upper .left h1 {
+            font-size: 2em;
+            width: 280px;
+        }
+        
+        section.upper .left > span {
+            margin-top: 6px;
+            width: 310px;
+            font-size: 14px;
+        } 
+        section.upper .right {
+            height: 400px;
+            width: 780px;
+        }
+        section.middle .left {
+            width: 68vw;
+           }
+           
+   section.middle .left .info {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+    width: 98.5%;
+}
+   section.middle .left .info .card {
+    height: 160px;
+    padding: 0.5rem 1rem 0.3rem 0.5rem;
+    width: 137px;
+}
+   section.middle .left .info .card h4 {
+    font-size: 13px;
+    margin-top: 10px;
+}
+   section.middle .left .info .card span {
+    line-height: 1.4;
+    font-size: 11.2px;
+    margin-top: 7px;
+}
+footer .container {
+    padding-left: 50px;
+     gap: 10rem;
+}
+    }
+
+@media screen and (max-width: 904px) {
+    section.upper .right {
+        height: 450px;
+        width: 890px;
+    }
+    section.upper .container {
+        gap: 2rem;
+    }
+    section.upper {
+          height: 65vh;  
+    }
+    section.middle .container {
+        gap: 1rem; 
+   }
+   section.middle .cube2 {
+    left: 580px;
+   }
+   section.lower {
+     height: 74vh; 
+    }
+    section.lower .extra .dot1 {
+        top: 320px;
+        left: 34px;
+    }
+    section.lower .extra .dot2 {
+        top: 320px;
+        left: 85px;
+    }
+    section.lowest .container {
+        gap: 1.5rem;
+    }
+    section.lowest aside span {
+        font-size: 12px;
+        margin-top: -13px;
+    }
+    label {
+        font-size: 12.5px;
+    }
+        }
+
+   @media screen and (max-width: 869px) {
+section.middle .right h2 {
+    width: 100%;
+    font-size: 19px;
+    }
+section.middle .right span {
+    font-size: 12px;
+    width: 150px;
+}
+section.middle .container {
+    gap: 2rem;
+}
+section.middle .left {
+    width: 69vw;
+   }
+   section.lower .right {
+    width: 440px;
+    margin-right: 145px; 
+}
+section.lower .right .linkbox {
+    grid-template: repeat(2, 190px) / repeat(2, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    height: 342px;
+    max-width: 100%;
+    height: 100%;
+}
+section.lower .right .linkbox .card {
+    height: 100%;
+    width: 170px;
+    padding: 0.3rem 1.6rem 2.8rem 1rem;
+}
+section.lower {
+     height: 89vh; 
+    }
+    section.lower .extra .dot1 {
+        top: 340px;
+    }
+    section.lower .extra .dot2 {
+        top: 340px;
+    }
+    section.lower .extra img.one {
+        position: absolute;
+        right: -1px;
+        top: 365px;
+        width: 23px;
+        height: 43px;
+    }
+    section.lower .extra img.two {
+        position: absolute;
+        width: 50px;
+        height: 35px;
+        top: 390px;
+        right: 0;
+    }
+    section.lower .extra img.three {
+        position: absolute;
+        width: 39px;
+        height: 31px;
+        right: -1px;
+        top: 380px;
+    }
+    section.lower .linkbox .card h4 {
+        font-size: 11.7px; 
+        margin-top: 5px;
+    }
+    section.lowest .left {
+        margin-left: -70px;
+        width: 79%;
+    }
+    form {
+        gap: 0;
+    }
+    input {
+        width: 180px;
+        max-width: 92%;
+    }
+    select {
+        width: 180px;
+        max-width: 92%; 
+    }
+    .data1 {
+        padding-left: 0.4rem;
+    }
+    .data2 {
+        margin-right: 43px;
+    }
+    .items img.one{
+        left: 500px;
+    } 
+    section.lowest aside h3 {
+       font-size: 21px; 
+   }
+   section.lowest aside span {
+       font-size: 12.4px;
+       width: 170px;
+   }
+   footer .right .box h3 {
+    font-size: 14px;
+}
+footer .right .box span {
+    font-size: 11px;
+}
+footer .container {
+    padding-left: 50px;
+     gap: 8rem;
+}
+      }
+
+@media screen and (max-width: 842px) {
+    nav .link ul {
+        gap: 1.2rem;
+        margin-left: 182px;
+         font-size: 14px; 
+    }
+    nav {
+        height: 43px;
+        position: relative;
+    }
+    nav .logo {
+        position: absolute;
+        top: 1rem;
+        font-size: medium;
+    }
+    .link {
+        position: absolute;
+        right: 1rem;
+    }
+    .link ul {
+        position: absolute;
+        right: 6.5rem;
+        top: 0.5rem;
+    }
+    .link .special {
+        position: absolute;
+        right: 0.5rem;
+        width: 84px;
+        height: 30px;
+    }
+    .link .special a {
+        font-size: 12px;
+    }
+    section.upper .container {
+        padding-right: 0;
+        gap: 0.8rem;
+    }
+      section.upper .right img {
+          height: 100%;
+      }
+    section.upper .right {
+        height: 350px;
+        width: 890px;
+    }
+    section.upper .left h1 {
+        font-size: 1.7em;
+        width: 250px;
+        margin-top: 22px;
+    }
+    
+    section.upper .left > span {
+        margin-top: 6px;
+        width: 290px;
+        font-size: 13.2px;
+    } 
+    section.middle .left {
+        width: 65vw;
+       }
+       
+section.middle .left .info {
+grid-template-columns: repeat(4, 1fr);
+gap: 0.4rem;
+width: 98.5%;
+}
+section.middle .left .info .mini {
+    height: 27px;
+    width: 27px;
+    border-radius: 7px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+section.middle .left .info .card {
+height: 145px;
+padding: 0.5rem 1rem 0.3rem 0.5rem;
+width: 120px;
+position: relative;
+}
+section.middle .left .info .card h4 {
+font-size: 11px;
+margin-top: 2px;
+}
+section.middle .left .info .card span {
+line-height: 1.4;
+font-size: 10px;
+margin-top: 5.5px;
+width: 75px;
+}
+section.middle .right h2 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 540;
+    }
+section.middle .right span {
+    font-size: 12.5px;
+    width: 160px;
+}   
+
+section.middle .right .menu {
+    margin-top: 0.8rem;
+    width: 85px;
+    height: 30px;
+    }
+    section.middle .right .menu a {
+     font-size: 10.5px;
+        }
+        section.lower .left h2 {
+            width: 200px;
+            font-size: 19px;
+            font-weight: 540;
+        } 
+        section.lower .left span {
+            font-size: 12.3px;
+            width: 210px;
+        }
+        section.lower .left .link {
+            margin-top: 1.5rem;
+            font-size: 12px;
+            width: 90px;
+            height: 29px;
+            position: absolute;
+            left: 30px;
+            top: 280px; 
+        }
+        section.lower .extra .deep {
+            top: 310px;
+            left: 185px;
+        }
+        section.lower .right {
+            width: 440px;
+            margin-right: 145px; 
+        }
+        section.lower .right .linkbox {
+            grid-template: repeat(2, 190px) / repeat(2, 1fr);
+            column-gap: 0.6rem;
+            row-gap: 0.2rem;
+            height: 342px;
+            margin-left: 70px;
+        }
+        section.lower .right .linkbox .card {
+            height: 90%;
+            width: 150px;
+            padding: 0.7rem 0.6rem 1.8rem 0.6rem;
+            min-height: 97%;
+        }
+        section.lowest .left {
+            margin-left: -70px;
+             width: 79%; 
+            min-width: 410px;
+        }
+        button {
+            height: 27px;
+            width: 94px;
+            bottom: 3rem;
+            right: 1rem;
+            font-size: 12.5px;
+        }
+        section.upper {
+            max-height: 400px;
+      }
+    }
+
+    @media screen and (max-width: 786px) {
+        footer .right .box span {
+            font-size: 10px;
+        }
+        footer .container {
+            padding-left: 50px;
+             gap: 5rem;
+        }
+      section.upper .right {
+          height: 320px;
+          width: 890px;
+      }
+      section.upper {
+        max-height: 340px;
+  }
+    }
+
+    @media screen and (max-width: 768px) {
+        section.upper .left > span {
+            font-size: 15.7px;
+        }
+        section.middle .right .menu a {
+            font-size: 11.2px;
+               } 
+               section.middle .left .info .card h4 {
+                font-size: 12.4px;
+                margin-top: 2px;
+                }
+                section.middle .left .info .card span {
+                line-height: 1.5;
+                font-size: 12px;
+                margin-top: 5.5px;
+                height: 80px;
+                min-width: 100%;
+                }
+                section.middle .left .info .card {
+                    padding: 0.3rem 0.1rem 0.3rem 0.4rem;
+                    }
+                    footer .right .box span {
+                        font-size: 11.4px;
+                    }
+                    footer .right {
+                        width: 500px;
+                    }
+                       footer .right .box {
+                        width: 115px;
+                    }
+            footer .container {
+                padding-left: 20px;
+            }
+            section.lower::before {
+                content: "";
+                transform: skewy(-2.1deg);
+             } 
+             section.lowest aside h3 {
+                font-size: 20px; 
+            }  
+    }
+
+    @media screen and (max-width: 748px) {
+        section.middle .container {
+            padding-left: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 745px) {
+        section.middle .container {
+            flex-wrap: wrap-reverse;
+        }
+        section.middle .left {
+            margin-top: -105px;
+            margin-left: 20px;
+            
+        }
+        section.middle {
+            max-height: 680px;
+            height: 120vh;
+        }
+        section.middle .right {
+            align-self: center;
+            margin-inline: auto;
+            margin-left: 20%;
+            margin-top: -5px;
+        }
+        section.middle .left .info .card span {
+            line-height: 1.55;
+            font-size: 13.2px;
+            }
+            section.middle .left .info .card {
+                height: 165px;
+                width: 150px;
+                position: relative;
+                }
+                section.middle .left .info .mini {
+                    height: 32px;
+                    width: 32px;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+                section.middle .left .info .card h4 {
+                    font-size: 15px;
+                    margin-top: 12px;
+                    height: 20px;
+                    }
+                    section.middle .left .logo h4 {
+                        font-size: 15px;
+                        margin-left: 35px;
+                    }
+                    section.middle .left .logo img {
+                        width: 145px;
+                        margin-top: 18px;
+                        margin-left: 5px;
+                    }
+                    section.middle .cube2 {
+                    left: 120px;
+                    width: 20px;
+                }
+                section.middle .cube1 {
+                    top: 350px;
+                    left: 360px;
+                }
+                section.middle .cube3 {
+                    top: 370px;
+                    left: 310px;
+                    width: 18px;
+                }
+                section.middle .dot {
+                     top: 300px; 
+                    left: 415px;
+                    width: 2.5rem;
+                }
+                section.middle .right h2 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-left: 120px;
+                    }
+                section.middle .right span {
+                    font-size: 16.2px;
+                    min-width: 420px;
+                    height: 100px;
+                    text-align: center;
+                    margin-top: 105x;
+                }   
+                
+                section.middle .right .menu {
+                    margin-top: 0.8rem;
+                    width: 110px;
+                    height: 40px;
+                    margin-left: 140px;
+                    }
+                    section.middle .right .menu a {
+                     font-size: 13px;
+                        }
+                        section.lower .right {
+                            width: 440px;
+                            margin-right: 145px; 
+                        }
+                        section.lower .right .linkbox {
+                            margin-left: 0;
+                        }
+                        section.lower .right .linkbox .card {
+                            height: 80%;
+                            width: 170px;
+                            padding: 0.9rem 0.4rem 1.2rem 0.4rem;
+                            min-height: 94%;
+                        }
+                        section.lower .left h2 {
+                            width: 200px;
+                            font-size: 22px;
+                            font-weight: bold;
+                        } 
+                        section.lower .left span {
+                            font-size: 14px;
+                            width: 185px;
+                            padding-top: 8px;
+                        }
+                        section.lower .left .link {
+                            margin-top: 1.6rem;
+                            font-size: 14px;
+                            width: 110px;
+                            height: 29px;
+                            top: 275px; 
+                        }
+                        section.lower .linkbox .card h4 {
+                            font-size: 13.5px; 
+                            margin-top: 4px;
+                }
+                section.lower .right .linkbox .card span {
+                    font-size: 12.5px;
+                    line-height: 1.2;
+                    margin-top: 4px;
+                }
+                section.lowest .container {
+                    gap: 0;
+                }
+                section.lowest aside {
+                    margin-left: -20px;
+                    width: 180px;
+                }
+                section.lowest aside span {
+                    font-size: 14px;
+                }
+    }
+
+    @media screen and (max-width: 701px) {
+        section.lowest .container {
+            flex-wrap: wrap-reverse;
+            padding-top: 40px;
+        }
+        button {
+            height: 30px;
+            width: 125px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        section.lowest {
+            max-height: 1100px;
+            height: 153vh;
+        }
+        section.lowest aside {
+            height: 200px;
+            width: 500px;
+            margin-left: -70px;
+        }
+        section.lowest aside h3 {
+            font-size: 21px; 
+            margin-left: 120px;
+        }
+        section.lowest aside span {
+            font-size: 15px;
+            width: 450px;
+            height: 190px;
+            height: 90px;
+            max-width: 100%;
+            text-align: center;
+        }
+        section.lowest .left {
+            margin-left: -20px;
+             width: 100%;
+             min-width: 114%;
+            height: 480px;
+            margin-top: 10px;
+        }
+        form {
+            gap: 0.3rem;
+            width: 425px;
+        }
+        label {
+            font-size: 15px;
+        }
+        input {
+            width: 185px;
+            height: 36px;
+            max-width: 94%;
+        }
+        select {
+            width: 185px;
+            height: 36px;
+            max-width: 94%; 
+        }
+        
+        .items img.one{
+            left: 100px;
+        }
+        .items img.four {
+            top: 150px;
+            }
+            .items img.five {
+            top: 150px;
+           }
+          .items img.six {
+            left: 20px;
+            top: 290px;
+          } 
+           .items img.three {
+            top: 225px;
+            left: 10px;
+        }
+        footer .container {
+            flex-wrap: wrap-reverse;
+            padding-left: 10%;
+        }
+        footer {
+            max-height: 600px;
+            height: 65vh;
+        }
+        footer .left {
+            margin-left: 13%;  
+            margin-top: -50px;
+              }
+              footer .left img {
+                  margin-left: 120px;
+              }
+          footer .left .foot {
+              display: flex;
+              gap: 1.4rem;
+          }
+          footer .logo span:first-child {
+            width: 30px;
+            height: 30px;
+        }
+        footer .logo span:last-child {
+            font-size: 17px;
+        }
+        footer .right .box span {
+            font-size: 12px;
+        }
+         section.lower .container {
+             flex-wrap: wrap;
+         }
+         section.lower {
+            max-height: 780px; 
+            height: 110vh;  
+          }
+          section.lower .left span {
+            font-size: 12.3px;
+            width: 210px;
+        }
+        section.lower .left .link {
+            margin-top: 1.5rem;
+            font-size: 17px;
+            width: 140px;
+            height: 40px;
+            position: absolute;
+            left: 240px;
+            top: 550px; 
+        }
+        section.lower .extra .deep {
+            top: 90px;
+            left: 505px;
+        }
+
+        section.lower .right .linkbox {
+            column-gap: 0.6rem;
+            row-gap: 0.4rem;
+            margin-left: 40px;
+        }
+        section.lower .right .linkbox .card {
+            height: 40%;
+            width: 220px;
+            padding: 1.7rem 1rem 1rem 1rem;
+            min-height: 94%;
+            border-radius: 20px;
+        }
+        section.lower .linkbox .card h4 {
+            font-size: 14px; 
+}
+    section.lower .right .linkbox .card span {
+    font-size: 13px;
+    line-height: 1.1;
+    margin-top: 8px;
+}
+   section.lower .left {
+       margin-left: 190px;
+       margin-top: -20px;
+   }
+   section.lower .left h2 {
+    width: 200px;
+} 
+   section.lower .left span {
+    font-size: 14px;
+    width: 385px;
+    padding-top: 6px;
+    margin-left: -85px;
+} 
+     section.middle .container {
+         padding-left: 0;
+     }  
+     section.middle .left {
+         margin-left: 0;
+     }
+     
+    .link ul {
+       font-size: 18px;
+    }
+    .link .special a {
+        font-size: 14px;
+    }
+    section.upper .right {
+        height: 300px;
+        width: 850px;
+    }
+}    
+        
+@media screen and (max-width: 668px) {
+    section.upper .right {
+        height: 320px;
+        width: 850px;
+    }
+    section.upper .container {
+        padding-left: 5px;
+        gap: 0;
+    }
+    section.middle .left .info {
+        grid-template-columns: repeat(3, 1fr);
+}
+section.middle .left .info .card:hover {
+      background: #000;
+}
+section.middle .left .info .card:hover h4 {
+    color: #fff;
+}
+section.middle .left .info .card:hover span {
+    color: #fff;
+}
+section.middle .left .info .card:last-child {
+     background: #000; 
+}
+section.middle .left .info .card:last-child h4 {
+    color: #fff;
+}
+section.middle .left .info .card:last-child span {
+    color: #fff;
+}
+section.middle .left .info .card:last-child:hover {
+    background: transparent; 
+}
+section.middle .left .info .card:last-child:hover h4 {
+   color: #4d4c4c;
+}
+section.middle .left .info .card:last-child:hover span {
+   color: #4d4c4c;
+}
+
+section.middle .container {
+    padding-left: 30px;
+} 
+section.middle {
+    max-height: 780px;
+    height: 140vh;
+}
+footer {
+    max-height: 600px;
+    height: 68vh;
+}
+    nav .container {
+        padding-left: 20px;
+    } 
+    nav .logo {
+        font-size: 18px;
+        font-weight: 700;
+    }  
+}
+
+@media screen and (max-width: 602px) {
+    section.upper .right {
+        height: 270px;
+        width: 860px;
+        margin-top: -50px;
+    }
+    section.upper .right img {
+        object-fit: cover;
+    }
+    section.upper .left h1 {
+        font-size: 1.7em;
+        font-weight: 545;
+        width: 240px;
+    }
+    section.upper .left > span {
+        width: 240px;
+        font-size: 16px;
+    } 
+    section.upper .left {
+        max-width: 245px;
+    }
+    section.lower .extra img.one {
+        top: 580px;
+        width: 17px;
+        height: 31px;
+    }
+    section.lower .extra img.two {
+        top: 600px;
+    }
+    section.lower .extra img.three {
+        width: 34px;
+        height: 30px;
+        top: 590px;
+    }
+    footer .left .foot {
+        display: flex;
+        gap: 1rem;
+    }
+    footer .logo span:first-child {
+      width: 25px;
+      height: 27px;
+  }
+  footer .logo span:last-child {
+      font-size: 13px;
+      margin-left: -5px;
+  }
+    section.lowest aside {
+        margin-left: -130px;
+    }
+    section.lowest aside h3 {
+        font-size: 20px; 
+        margin-left: 160px;
+    }
+    section.lowest aside span {
+        font-size: 15px;
+        font-weight: lighter;
+        width: 420px;
+    }
+    section.lowest .left {
+        margin-left: -100px;
+        min-width: 172.3%;
+        height: 480px;
+    }
+    footer .right {
+        margin-left: -25px;
+    }
+    section.lowest .left {
+        margin-left: -70px;
+         width: 90%;
+         min-width: 151%;
+        height: 480px;
+    }
+    form {
+        gap: 0;
+        width: 420px;
+    }
+    label {
+        font-size: 14.5px;
+    }
+    input {
+        width: 200px;
+        height: 36px;
+        max-width: 95%;
+        margin-left: -5px;
+    }
+    select {
+        width: 200px;
+        height: 36px;
+        max-width: 95%;
+        margin-left: -5px;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    section.upper .left .menu .btn1 {
+        font-size: 13px;
+        width: 125px;
+        height: 36px;
+    }
+    section.middle .left .info .card span {
+        font-size: 12px;
+        line-height: 1.3;
+        padding-right: 1rem;
+        padding-left: 0.5rem;
+        }
+    section.middle .left .info .card h4 {
+        font-size: 12.5px;
+        padding-left: 0.5rem;
+        }
+    section.upper .left .menu .btn2 {
+        align-items: center;
+        font-size: 14px;
+        width: 105px;
+        height: 30px;
+    }
+    footer .left .foot {
+        display: flex;
+        gap: 1.4rem;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    section.upper .left img {
+        right: -20px;
+        top: 160px;
+    }
+    nav .link ul {
+        gap: 0;
+        margin-left: 212px;
+         font-size: 15px; 
+         align-items: center;
+    }
+    nav .link ul * {
+        margin-left: 3px;
+    }
+    nav {
+        height: 48px;
+    }
+    nav .logo {
+        left: 3.5px;
+       font-size: medium;
+    }
+    .link {
+        position: absolute;
+        right: 0.4rem;
+    }
+    .link ul {
+        position: absolute;
+        right: 6.5rem;
+        top: 0.5rem;
+    }
+    .link .special {
+        position: absolute;
+        right: 0.1rem;
+        width: 84px;
+        height: 30px;
+    }
+    .link .special a {
+        font-size: 13px;
+    }
+    section.middle .right h2 {
+        margin-left: 60px;
+        }
+    section.middle .right span {
+        font-size: 16.2px;
+        min-width: 420px;
+        height: 100px;
+        margin-left: -60px;
+        margin-top: 105x;
+    }   
+    
+    section.middle .right .menu {
+        margin-top: 0;
+        width: 90px;
+        height: 35px;
+        margin-left: 100px;
+        }
+        section.middle .right .menu a {
+         font-size: 12px;
+            }
+            section.middle .left .info {
+                grid-template-columns: repeat(2, 1fr);
+                margin-left: 60px;
+                row-gap: 0.7rem;
+        }
+        section.lower .extra .dot1 {
+            display: none;
+        }
+        section.lower .extra .dot2 {
+            display: none;
+        }
+        section.lower .extra .deep {
+            top: 125px;
+            left: 235px;
+        }
+        section.lower .left h2 {
+            width: 200px;
+            margin-left: -85px;
+            font-weight: 540;
+        } 
+           section.lower .left span {
+            font-size: 14px;
+            width: 385px;
+            margin-left: -155px;
+        } 
+        section.lower .right .linkbox {
+            column-gap: 0.6rem;
+            row-gap: 0.4rem;
+            margin-left: 0;
+        }
+        section.lower .right .linkbox .card {
+            height: 60%;
+            width: 205px;
+            padding: 1.7rem 1.2rem 4rem 1.2rem;
+            min-height: 85%;
+            border-radius: 20px;
+        }
+        section.lower .right .linkbox .card span {
+            font-size: 11.5px;
+            line-height: 1.2;
+            margin-top: 6px;
+        }
+        section.lowest .left {
+            margin-left: -70px;
+             width: 90%;
+             min-width: 177%;
+            height: 480px;
+        }
+        form {
+            gap: 0;
+            width: 420px;
+        }
+        label {
+            font-size: 15.5px;
+        }
+        input {
+            width: 220px;
+            height: 40px;
+            max-width: 97%;
+            margin-left: -5px;
+        }
+        .data1 {
+            width: 50%;
+        }
+        .data2 {
+            width: 50%;
+        }
+        select {
+            width: 220px;
+            height: 40px;
+            max-width: 97%;
+            margin-left: -5px; 
+        }
+        footer .left .foot {
+            gap: 1rem;
+        }
+        footer .left {
+            margin-left: 0;  
+            margin-top: -50px;
+              }
+              footer .container .right  {
+
+                margin-left: 2px;
+            }
+        footer .container {
+             padding-left: 0;
+        }
+        section.upper .right {
+            margin-top: -60px;
+        }
+        section.upper .right img {
+            object-fit: cover;
+        }
+}
+@media screen and (max-width: 548px) {
+    section.lowest .left {
+        margin-left: 70px; 
+        min-width: 106%;
+    }
+    section.lowest .container {
+        padding-left: 0;
+    }
+    section.lowest aside {
+        margin-left: -10px;
+    }
+    section.lowest aside h3 {
+        font-size: 18px; 
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    section.lowest aside span {
+        font-size: 13px;
+        width: 420px;
+        position: absolute;
+        top: 60px;
+        left: 15px;
+    }
+    section.upper .right {
+        margin-top: -30px;
+    }
+    section.upper .right img {
+        object-fit: cover;
+    }
+    section.lowest {
+        max-height: 895px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    section.upper .right {
+        height: 270px;
+        width: 890px;
+    }
+}
+@media screen and (max-width: 519px) {
+    .link ul {
+        position: absolute;
+        right: 6rem;
+        top: 0.5rem;
+    }
+    section.upper .left > span {
+        width: 227px;
+        font-size: 15px;
+    } 
+    section.upper .left h1 {
+        font-size: 1.5em;
+        width: 210px;
+    }
+    section.upper .left {
+        max-width: 235px;
+    }
+    section.upper .left .menu .btn1 {
+        font-size: 11px;
+        width: 92px;
+        height: 30px;
+        margin-right: 0.5rem;
+    }
+    section.upper .left .menu .btn2 {
+        align-items: center;
+        font-size: 12px;
+        width: 75px;
+    }
+    section.upper {
+        max-height: 300px;
+  }
+  section.middle .right h2 {
+    font-weight: 540;
+    font-size: 20px;
+    width: 160px;
+    }
+section.middle .right span {
+    font-size: 15px;
+    min-width: 420px;
+    margin-left: -70px;
+} 
+section.middle .right .menu {
+    margin-top: -30px;
+    }
+    section.middle .left .logo h4 {
+        font-size: 12px;
+    }
+    section.middle .left .logo img {
+        width: 115px;
+        margin-top: 10px;
+    }
+    section.middle .left .info {
+        margin-left: 30px;
+    }
+    section.lower .left .link {
+        margin-top: 0.5rem;
+        font-size: 13px;
+        width: 100px;
+        height: 30px; 
+    }
+    section.lowest .left {
+        margin-left: 90px;
+         min-width: 100%;
+        height: 480px;
+    }
+    form {
+        gap: 0;
+        width: 370px;
+    }
+    label {
+        font-size: 14.8px;
+    }
+    input {
+        width: 210px;
+        height: 37px;
+        max-width: 97%;
+        margin-left: -5px;
+    }
+    select {
+        width: 210px;
+        height: 37px;
+        max-width: 97%;
+        margin-left: -5px; 
+    }
+    footer .right .box {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 484px) {
+     section.upper .container {
+         flex-wrap: wrap;
+     }
+     section.upper .right {
+         margin-top: auto;
+         width: 350px;
+         margin-left: 40px;
+     }
+     section.upper {
+        max-height: 500px;
+        height: 120vh;
+  }
+  section.upper .left {
+    max-width: 395px;
+    max-height: 230px;
+    justify-content: center;
+    align-items: center;
+}
+   section.upper .left .menu .btn1 {
+    margin-left: 60px;
+}
+  section.upper .left > span {
+    width: 327px;
+} 
+section.lower .right .linkbox {
+    column-gap: 0.6rem;
+    row-gap: 0.4rem;
+    margin-left: -18px;
+}
+section.lower .right .linkbox .card {
+    height: 90%;
+    width: 185px;
+    padding: 1.7rem 0.5rem 4rem 1rem;
+    min-height: 85%;
+}
+section.lower .right .linkbox .card span {
+    font-size: 11.3px;
+}
+       footer {
+        max-height: 600px;
+        height: 76vh;
+}
+footer .right .box h3 {
+    font-size: 11.2px;
+    margin: 4px 3px 4px 5px;
+}
+footer .right .box span {
+    font-size: 10.5px;
+    display: inline-block;
+    margin: 4px 30px 4px 5px;
+
+}
+     footer .right {
+    display: flex; 
+    width: 600px;
+    height: 300px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    left: 70px;
+    }
+
+   footer .left img {
+       width: 100px;
+   } 
+   section.lowest .left {
+    margin-left: 70px;
+     min-width: 110%;
+     height: 460px;
+} 
+}
+
+@media screen and (max-width: 458px) {
+      nav {
+          height: 60px;
+      }
+      nav .logo {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+      }
+      nav .logo span.ball {
+          margin-top: -1px;
+      }
+      .link ul {
+          margin-top: 23px;
+      }
+      .link .special {
+        margin-top: 25px;
+        height: 24px;  
+      }
+      .link .special a {
+          padding-top: 1px;
+          font-size: 11px;
+}
+section.middle .right span {
+    font-size: 14.5px;
+    min-width: 400px;
+    margin-left: -70px;
+}
+section.lower .left h2 {
+    width: 200px;
+    margin-left: -95px;
+    font-weight: 540;
+} 
+   section.lower .left span {
+    font-size: 14px;
+    width: 385px;
+    margin-left: -195px;
+} 
+    section.lowest .left {
+      margin-left: 80px;
+       min-width: 111%;
+       height: 460px;
+}
+    section.lowest aside h3 {
+      font-size: 18px; 
+       position: absolute;
+       left: -38px;
+       top: 50px;
+       }
+    section.lowest aside span {
+       font-size: 12px;
+      width: 310px;
+      left: 45px;
+      top: 90px;
+} 
+ nav, section, footer {
+    min-width: 100vw;
+    width: 100%;
+      }
+      body {
+     width: 100vw;
+     }             
+}
+   @media screen and (max-width: 433px) {
+    nav, section, footer {
+        min-width: 100vw;
+        width: 107%;
+     }
+     body {
+         width: 100vw;
+     }
+     section.lower .extra img.one {
+         display: none;
+     }
+     section.lower .extra img.two {
+        display: none;
+    }
+    section.lower .extra img.three {
+        display: none;
+    }
+   }
+
+@media screen and (max-width: 425px) {
+    nav, section, footer {
+       min-width: 100vw;
+       width: 110%;
+    }
+    body {
+        width: 100vw;
+    }
+    section.lowest .left {
+        margin-left: 70px;
+         min-width: 108%;
+         height: 460px;
+        }
+      }
+
+@media screen and (max-width: 409px) {
+    nav, section, footer {
+        min-width: 100vw;
+        width: 111%;
+     }
+     body {
+         width: 100vw;
+     } 
+     .items img.four {
+       display: none;
+        }
+        .items img.five {
+          display: none;
+       }
+      .items img.six {
+        display: none;
+      } 
+       .items img.two {
+        display: none;
+       }
+       .items img.three {
+        top: 200px;
+        left: 190px;
+    }
+    .items img.one {
+        left: 165px;
+        top: 200px;
+    } 
+    section.lower .extra .deep {
+        display: none;
+    }
+    section.middle .dot {
+        display: none;
+    }
+    section.middle .cube2 {
+        left: 98px;
+        top: 60px;
+    }
+    section.middle .cube3 {
+        top: 340px;
+    }
+    section.middle .cube1 {
+        top: 310px;
+    }
+      
+    section.lower .right .linkbox .card h4 {
+        font-size: 12px;
+    }
+    section.lowest aside span {
+       width: 310px;
+       left: 55px;
+ } 
+     section.lowest .left {
+       min-width: 112%;
+       height: 460px;
+    }
+}
+
+  @media screen and (max-width: 391px) {
+    section.lowest .left {
+         margin-left: 70px; 
+        min-width: 119%;
+        height: 450px;
+     }
+  }
+
+  @media screen and (max-width: 375px) {
+    form {
+        gap: 0;
+        width: 310px;
+    }
+    label {
+        font-size: 13.8px;
+    }
+    input {
+        width: 200px;
+        height: 35px;
+        max-width: 94%;
+        margin-left: -5px;
+    }
+    select {
+        width: 200px;
+        height: 35px;
+        max-width: 94%;
+        margin-left: -5px; 
+    }
+    section.lowest .left {
+        margin-left: 60px; 
+       min-width: 107%;
+       height: 450px;
+    }
+    section.lowest {
+        max-height: 900px;
+         height: 146vh; 
+    }
+    section.lower .left h2 {
+        margin-left: -110px;
+    } 
+       section.lower .left span {
+        font-size: 13.8px;
+        margin-left: -205px;
+    } 
+    section.middle .right span {
+        font-size: 13.8px;
+        min-width: 380px;
+        margin-left: -80px;
+    }
+    section.upper .left img {
+        right: 40px;
+        top: 180px;
+    }
+  }
+
+  @media screen and (max-width: 357px) {
+    section.lower .right {
+        width: 440px;
+        margin-right: 125px; 
+    }
+    section.lower .right .linkbox {
+        grid-template: repeat(2, 190px) / repeat(2, 1fr);
+        column-gap: 0.5rem;
+        row-gap: 0.1rem;
+        height: 332px;
+        max-width: 100%;
+        height: 100%;
+    }
+    section.lower .right .linkbox .card {
+        height: 90%;
+        width: 170px;
+        padding: 0.5rem 1.3rem 2.8rem 1.3rem;
+    }
+  }
+
+  @media screen and (max-width: 349px) {
+    nav, section, footer {
+        min-width: 100vw;
+        width: 115%;
+     }
+     body {
+         width: 100vw;
+     } 
+     section.middle .cube2 {
+        left: 48px;
+    }
+    section.middle .cube3 {
+        top: 340px;
+        left: 200px;
+    }
+    section.middle .cube1 {
+        top: 310px;
+        left: 260px;
+    }
+    section.lower .left span {
+        font-size: 13.8px;
+         width: 365px; 
+        margin-left: -210px;
+    } 
+    section.middle .left .info {
+        margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 329px) {
+    section.lower .right {
+        min-width: 290px;
+        margin-right: 0; 
+        height: 800px;
+    }
+    nav, section, footer {
+        min-width: 100vw;
+        width: 115%;
+     }
+     body {
+         width: 100vw;
+     } 
+    section.lower .right .linkbox {
+        grid-template-columns: 100%;
+        height: 322px;
+        width: 360px;
+        height: 100%;
+        column-gap: 0;
+        row-gap: 0;
+        margin-left: -10px;
+    }
+    section.lower .right .linkbox .card {
+        height: 45%;
+        width: 310px;
+        margin-top: -1rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 0.4rem;
+        border-radius: 35px;
+        padding-top: 35px;
+    }
+    section.lower .right .linkbox .card span {
+        text-align: center;
+    }
+    section.lower {
+        max-height: 910px; 
+        height: 290vh;  
+      }
+      section.lower .linkbox .card:nth-child(3){
+        margin-top: -2rem;
+    }
+    section.lower .linkbox .card:nth-child(4){
+        margin-top: -3rem;
+    }
+    section.lower .linkbox .card:first-child{
+         margin-top: 0; 
+        }
+        section.lower .left span {
+            font-size: 12px;
+             width: 325px; 
+            margin-left: -200px;
+        } 
+        section.lower .left h2 {
+            margin-left: -160px;
+        } 
+        section.lower .right .linkbox .card span {
+            font-size: 12px;
+        }
+        section.lower .right .linkbox .card h4 {
+            font-size: 13px;
+        }
+        section.lower .left .link {
+            top: 869px;
+            left: 135px;
+            position: absolute;
+            font-size: 12px;
+            width: 80px;
+            height: 25px; 
+            border-radius: 10px;
+        } 
+        section.lowest aside span {
+            width: 300px;
+            left: 25px;
+      } 
+        section.middle .right span {
+         font-size: 12.5px;
+          min-width: 330px;
+          margin-left: -64px;
+    }
+    section.middle .right h2 {
+        font-weight: 540;
+        font-size: 20px;
+        margin-left: 10px;
+        }
+    section.middle .right .menu {
+        margin-top: -30px;
+        margin-left: 45px;
+        }
+       nav .link ul {
+            margin-top: 23px;
+            font-size: 11.5px;
+        }
+        section.upper .left > span {
+            width: 320px;
+            font-size: 13.5px;
+        } 
+        section.upper .left h1 {
+            font-size: 1.5em;
+            width: 230px;
+        }     
+  }
+
+  @media screen and (max-width: 302px) {
+    nav, section, footer {
+        min-width: 100vw;
+        width: 115%;
+     }
+     body {
+         width: 100vw;
+     } 
+     section.middle .left .info {
+        grid-template-columns: 100%;
+        margin-left: 60px;
+        row-gap: 0.7rem;
+}
+     section.middle {
+    max-height: 1120px;
+    height: 320vh;
+   }
+   section.middle .left .info .card {
+    height: 170px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px #b0b0b0;
+}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
